@@ -32,6 +32,13 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- this is an example command in normal mode
+    ["<leader>a"] = { "<cmd>echo 'Hello'<cr>", desc = "say hi" },
+
+    -- this is a new section for renaing
+    ["<leader>r"] = { name = "Rename" },
+    ["<leader>rn"] = { ":IncRename", desc = "Rename Symbol" },
   },
   t = {
     -- setting a mapping to false will disable it
