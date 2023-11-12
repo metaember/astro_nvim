@@ -60,7 +60,6 @@ return {
     version = false,
     event = { "BufReadPre", "BufNewFile" },
     config = function(_, opts)
-      require "mini"
       require("mini.animate").setup()
       -- this controls timing of mouse animations. Default 250 ms
       MiniAnimate.config.cursor.timing = function(_, n) return 100 / n end
